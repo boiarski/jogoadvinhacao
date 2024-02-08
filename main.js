@@ -4,6 +4,7 @@ const btnTry = document.querySelector('#btnTry');
 const btnTryAgain = document.querySelector('#btnTryAgain');
 
 let error = document.querySelector(".error");
+
 let number = Math.round(Math.random()*10);
 let numberOfGuesses = 1;
 
