@@ -22,8 +22,11 @@ function handleTryClick(event) {
     
         screen2.querySelector("h2").innerText = `Acertou em ${numberOfGuesses} tentativas!`;
     }
-    else if (Number(guess.value) < 0 || Number(guess.value) > 10 || Number(guess.value) == NaN){
+    else if (Number(guess.value) < 0 || Number(guess.value) > 10){
         guess.value = ""
+        error.innerText = 'Insira um número válido.'
+    }
+    else if (guess.value == ''){
         error.innerText = 'Insira um número válido.'
     }
     else{
